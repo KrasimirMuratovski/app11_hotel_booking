@@ -22,6 +22,11 @@ class Hotel:
 		df.loc[df["id"] == self.hotel_id, "available"] = "no"
 		df.to_csv("hotels.csv", index=False) ### TODO
 
+class SpaHotel(Hotel):
+	def book_spa_package(self):
+		pass
+
+
 
 class ReservationTicket:
 	def __init__(self, customer_name, hotel_object):
@@ -35,6 +40,18 @@ class ReservationTicket:
 		Hotel name: {self.hotel_object.name}
 		"""
 		return content
+
+
+class ReservationTicketSpa(ReservationTicket):
+	def generate(self):
+		content = f"""Thank you for your SPA reservation
+		Here are your SPA booking data:
+		Name: {self.customer_name}
+		Hotel name: {self.hotel_object.name}
+		"""
+		return content
+
+
 
 
 class CreditCard:
@@ -57,15 +74,22 @@ class SecureCreditCard(CreditCard):
 
 print(df)
 hotel_ID = input("Enter hotel id: ")
-hotel = Hotel(hotel_ID)
+hotel = SpaHotel(hotel_ID)
+
 if hotel.available():
 	credit_card = SecureCreditCard(number = "1234567890123456")
 	if credit_card.validate(expiration="12/26", holder = "JOHN SMITH", cvc = "123"):
-		if credit_card.authenticate(given_password="mypass1"):
+		if credit_card.authenticate(given_password="mypass"):
 			hotel.book()
 			name = input("Enter your name: ")
 			reservation_ticket = ReservationTicket(name, hotel)
 			print(reservation_ticket.generate())
+			is_spa = input("Do you want to book SPA package: ")
+			if is_spa == "yes":
+				hotel.book_spa_package()
+				reservation_ticket = ReservationTicketSpa(name, hotel)
+				print(reservation_ticket.generate())
+
 		else:
 			print("Credit card authentication failed")
 	else:
