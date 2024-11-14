@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152f4b90-411c-4351-a1f1-dd06e4d8f128" name="Changes" comment="Day 42: Implemented SecureCreditCard">
+    <list default="true" id="152f4b90-411c-4351-a1f1-dd06e4d8f128" name="Changes" comment="Day 42: Implemented Spa option">
+      <change afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multi_pdf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotels.csv" beforeDir="false" afterPath="$PROJECT_DIR$/hotels.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
     "Python.main_exer.executor": "Run",
+    "Python.multi_pdf.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/SoftUni/Python/AS_60_20/app11_hotel_booking",
     "node.js.detected.package.eslint": "true",
@@ -52,8 +54,11 @@
       <recent name="C:\SoftUni\Python\AS_60_20\app11_hotel_booking" />
       <recent name="C:\SoftUni\Python\AS_60_20\app11_hotel_booking\exer" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SoftUni\Python\AS_60_20\app11_hotel_booking" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.multi_pdf">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="app11_hotel_booking" />
       <option name="ENV_FILES" value="" />
@@ -69,6 +74,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="app11_hotel_booking" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,8 +128,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="multi_pdf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="app11_hotel_booking" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multi_pdf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.multi_pdf" />
+        <item itemvalue="Python.main2" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main_exer" />
       </list>
@@ -124,7 +177,8 @@
       <option name="presentableId" value="Default" />
       <updated>1731508158730</updated>
       <workItem from="1731508165100" duration="2072000" />
-      <workItem from="1731512907053" duration="9614000" />
+      <workItem from="1731512907053" duration="12094000" />
+      <workItem from="1731566898684" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="Day 41: Initial OOP frame done.">
       <option name="closed" value="true" />
@@ -150,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731530091110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day 42: Implemented Spa option">
+      <option name="closed" value="true" />
+      <created>1731531755550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731531755550</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +233,8 @@
     <MESSAGE value="Day 41: Initial OOP frame done." />
     <MESSAGE value="Day 41: Before credit card class implementation." />
     <MESSAGE value="Day 42: Implemented SecureCreditCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 42: Implemented SecureCreditCard" />
+    <MESSAGE value="Day 42: Implemented Spa option" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 42: Implemented Spa option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -185,7 +248,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/app11_hotel_booking$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1731532942810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/app11_hotel_booking$main.coverage" NAME="main Coverage Results" MODIFIED="1731531008328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/app11_hotel_booking$main_exer.coverage" NAME="main_exer Coverage Results" MODIFIED="1731524717201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exer" />
+    <SUITE FILE_PATH="coverage/app11_hotel_booking$multi_pdf.coverage" NAME="multi_pdf Coverage Results" MODIFIED="1731568173389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
